@@ -1,0 +1,81 @@
+
+body{
+    height : 100vh;
+    width : 100vw;
+    background-color: #0c0c0c;
+    background-image:linear-gradient(
+      rgba(31, 28, 28, 0.322), 
+      rgba(1, 1, 1, 0.45),
+      rgba(1, 1, 1, 0.45),
+      rgba(1, 1, 1, 0.45),
+      rgba(88, 82, 82, 0.45)
+    ),
+     url("https://i.pinimg.com/originals/ff/da/98/ffda984e92ea94d7739b2657c9a2ba77.jpg");
+     background-size: cover;
+    height: 1000px;
+    background-repeat: no-repeat;
+    /* whether to clip the content or not */
+    overflow: hidden;
+    margin: 0rem;
+}
+#header{
+  background-color: black;
+  position: relative;
+}
+#image_track{
+    display: flex;
+    gap : 4vmin;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%,-50%);
+    user-select: none;
+}
+#image_track > .image{
+    width : 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+}
+
+.smooth-transition {
+    transition: transform 0.9s ease;
+  }
+#texts{
+    text-align: left;
+    color: azure;
+    text-transform: capitalize;
+    
+}
+.image-container {
+    position: relative;
+    width: 40vmin;
+    height: 56vmin;
+    display: flex;
+    gap : 4vmin;
+    
+   
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 50%;
+    display: flex;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }

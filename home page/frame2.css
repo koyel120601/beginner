@@ -1,0 +1,25 @@
+body{
+    overflow: hidden;
+}
+.scroll-container {
+    height: 100%; /* Adjust the height to your preference */
+    overflow: hidden;
+    position: relative;
+    
+  }
+  
+  .scroll-container img {
+    display: block;
+    animation: scroll 15s infinite linear;
+     /* Adjust the animation duration as needed */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+
+  }
